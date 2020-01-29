@@ -1,0 +1,37 @@
+.footerSection {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    background-color: $color-yellow;
+    // position: relative;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+
+    &__socialMedia {
+
+        & > *:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        
+    }
+
+}

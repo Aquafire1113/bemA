@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+a{
+  color:$color-black;
+  text-decoration:none;
+}
+
+.btn{
+  // background-color:$color-white;
+  padding:10px;
+  border-radius:5px;
+  transition: all .2s ease-in-out;
+
+  &--plain{
+    background-color:$color-black;
+    color:white;
+    border:2px solid $color-black;
+
+    &:hover{
+      background-color:transparent;
+      color: $color-black;
+    }
+  }
+
+  &--red{
+    background-color:$color-dark-red-01;
+    color:white;
+    border:2px solid $color-dark-red-01;
+
+    &:hover{
+      background-color:transparent;
+      color: $color-dark-red-01;
+    }
+  }
+}
+
+img{
+  width:400px;
+  height:300px;
+}

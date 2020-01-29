@@ -1,0 +1,36 @@
+.heroSection{
+    width:100%;
+    // height:600px;
+    height: 100vh;
+    background-position:center;
+    background-image: linear-gradient(to right, rgba($color-light-red,.8),rgba($color-light-red,.1)),url("../assets/mixing-it-up.jpg");
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    font-family:$font-garamond;
+
+
+    & > *:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    &__headingOne{
+        // font-size:230%;
+        font-size: 52px;
+    }
+
+    &__headingFour{
+        // font-size:140%;
+        font-size: 32px;
+    }
+
+    &__paragraph{
+        font-family:$font-rubik;
+        font-size: 17px;
+    }
+
+}
